@@ -4,8 +4,6 @@ import java.util.Scanner;
 
 public class ScannerExample {
 	public static void main(String[] args) {
-		int $val1 = 1;
-		System.out.println($val1);
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("x 값 입력: ");
 		String strX = scanner.nextLine();
