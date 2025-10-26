@@ -13,5 +13,5 @@ public class Printer {
 	public void println(String str) {
 		System.out.println(str);
 	}
-	// Printer.println으로 사용하려면 위 메서드들을 다 public static void 로 선언
+	// Printer.println으로 사용하려면 위 메서드들을 다 public static 으로 선언
 }
