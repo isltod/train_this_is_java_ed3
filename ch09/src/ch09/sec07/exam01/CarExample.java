@@ -1,0 +1,18 @@
+package ch09.sec07.exam01;
+
+public class CarExample {
+	public static void main(String[] args) {
+		Car car = new Car();
+		// 익명 자식 개체 필드
+		car.run1();
+		// 로컬 변수
+		car.run2();
+		// 매개변수로 넣어주기
+		car.run3(new Tire() {
+			@Override
+			public void roll() {
+				System.out.println("익명 자식 Tire 객체 3dl 굴러갑니다.");
+			}
+		});
+	}
+}
