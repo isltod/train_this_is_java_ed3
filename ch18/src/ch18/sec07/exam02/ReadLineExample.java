@@ -1,0 +1,30 @@
+package ch18.sec07.exam02;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class ReadLineExample {
+	public static void main(String[] args) {
+		try {
+			BufferedReader br = new BufferedReader(new FileReader(
+						"src/ch18/sec07/exam02/ReadLineExample.java")
+					);
+			int lineNo = 1;
+			while (true) {
+				String str = br.readLine();
+				if (str == null) break;
+				System.out.println(lineNo + "\t" + str);
+				lineNo++;
+			}
+			br.close();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}
