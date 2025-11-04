@@ -26,11 +26,11 @@ public class BoardWithFileInsertExample {
 			
 			//2. Prepared Statement 준비하고
 			PreparedStatement pstmt = conn.prepareStatement(sql, new String[] {"bno"});
-			pstmt.setString(1, "눈 경치");
-			pstmt.setString(2, "눈 내리는 동네 경치");
-			pstmt.setString(3, "winter");
-			pstmt.setString(4, "snow.jpg");
-			pstmt.setBlob(5,BoardWithFileInsertExample.class.getResourceAsStream("snow.jpg"));
+			pstmt.setString(1, "봄의 정원");
+			pstmt.setString(2, "정원의 꽃이  예쁘네요");
+			pstmt.setString(3, "spring");
+			pstmt.setString(4, "spring.jpg");
+			pstmt.setBlob(5,BoardWithFileInsertExample.class.getResourceAsStream("spring.jpg"));
 			
 			//3. Prepared Statement 실행하고
 			int rows = pstmt.executeUpdate();
