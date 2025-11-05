@@ -62,7 +62,7 @@ public class ChatClientExample {
 			chatClient.chatName = scanner.nextLine();
 			
 			JSONObject jsonObject = new JSONObject();
-			jsonObject.put("command", "imcoming");
+			jsonObject.put("command", "incoming");
 			jsonObject.put("data", chatClient.chatName);
 			String json = jsonObject.toString();
 			chatClient.send(json);
